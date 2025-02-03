@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_NaSr3TaO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.81052941
+_cell_length_b   6.81052941
+_cell_length_c   6.81052941
+_cell_angle_alpha   91.29927057
+_cell_angle_beta   91.29927057
+_cell_angle_gamma   91.29927057
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaSr3TaO6
+_chemical_formula_sum   'Na2 Sr6 Ta2 O12'
+_cell_volume   315.64750343
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.25000000  0.25000000  0.25000000  1
+  Na  Na1  1  0.75000000  0.75000000  0.75000000  1
+  Sr  Sr2  1  0.60178495  0.25000000  0.89821505  1
+  Sr  Sr3  1  0.89821505  0.60178495  0.25000000  1
+  Sr  Sr4  1  0.25000000  0.89821505  0.60178495  1
+  Sr  Sr5  1  0.39821505  0.75000000  0.10178495  1
+  Sr  Sr6  1  0.10178495  0.39821505  0.75000000  1
+  Sr  Sr7  1  0.75000000  0.10178495  0.39821505  1
+  Ta  Ta8  1  0.50000000  0.50000000  0.50000000  1
+  Ta  Ta9  1  0.00000000  0.00000000  0.00000000  1
+  O  O10  1  0.22005369  0.55389665  0.42543849  1
+  O  O11  1  0.42543849  0.22005369  0.55389665  1
+  O  O12  1  0.55389665  0.42543849  0.22005369  1
+  O  O13  1  0.94610335  0.27994631  0.07456151  1
+  O  O14  1  0.07456151  0.94610335  0.27994631  1
+  O  O15  1  0.27994631  0.07456151  0.94610335  1
+  O  O16  1  0.77994631  0.44610335  0.57456151  1
+  O  O17  1  0.57456151  0.77994631  0.44610335  1
+  O  O18  1  0.44610335  0.57456151  0.77994631  1
+  O  O19  1  0.05389665  0.72005369  0.92543849  1
+  O  O20  1  0.72005369  0.92543849  0.05389665  1
+  O  O21  1  0.92543849  0.05389665  0.72005369  1

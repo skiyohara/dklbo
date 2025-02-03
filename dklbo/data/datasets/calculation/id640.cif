@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_NaScAs2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.57889369
+_cell_length_b   5.57889369
+_cell_length_c   4.83574195
+_cell_angle_alpha   97.48912811
+_cell_angle_beta   97.48912811
+_cell_angle_gamma   103.18109484
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaScAs2O7
+_chemical_formula_sum   'Na1 Sc1 As2 O7'
+_cell_volume   143.28153685
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.75284528  0.24715472  0.50000000  1
+  Sc  Sc1  1  0.36831653  0.63168347  0.50000000  1
+  As  As2  1  0.25458155  0.17930477  0.91290482  1
+  As  As3  1  0.82069523  0.74541845  0.08709518  1
+  O  O4  1  0.38059115  0.96319622  0.75094101  1
+  O  O5  1  0.43200440  0.33418274  0.22238571  1
+  O  O6  1  0.15846714  0.36315383  0.69187691  1
+  O  O7  1  0.03680378  0.61940885  0.24905899  1
+  O  O8  1  0.95985550  0.04014450  0.00000000  1
+  O  O9  1  0.63684617  0.84153286  0.30812309  1
+  O  O10  1  0.66581726  0.56799560  0.77761429  1

@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Na5BiO5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.85101530
+_cell_length_b   5.85101530
+_cell_length_c   6.48590189
+_cell_angle_alpha   107.14601389
+_cell_angle_beta   107.14601389
+_cell_angle_gamma   45.35208569
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na5BiO5
+_chemical_formula_sum   'Na5 Bi1 O5'
+_cell_volume   149.68839690
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.32044448  0.32044448  0.14203726  1
+  Na  Na1  1  0.30311425  0.30311425  0.67314479  1
+  Na  Na2  1  0.69688575  0.69688575  0.32685521  1
+  Na  Na3  1  0.67955552  0.67955552  0.85796274  1
+  Na  Na4  1  0.00000000  0.00000000  0.50000000  1
+  Bi  Bi5  1  0.00000000  0.00000000  0.00000000  1
+  O  O6  1  0.85997531  0.85997531  0.16496868  1
+  O  O7  1  0.50000000  0.50000000  0.00000000  1
+  O  O8  1  0.84852734  0.84852734  0.69181062  1
+  O  O9  1  0.15147266  0.15147266  0.30818938  1
+  O  O10  1  0.14002469  0.14002469  0.83503132  1

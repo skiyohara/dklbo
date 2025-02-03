@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_KNaTiO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.19228417
+_cell_length_b   6.19228417
+_cell_length_c   5.45779588
+_cell_angle_alpha   93.07280887
+_cell_angle_beta   93.07280887
+_cell_angle_gamma   124.71216831
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   KNaTiO3
+_chemical_formula_sum   'K2 Na2 Ti2 O6'
+_cell_volume   170.87756784
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.26182009  0.73817991  0.75000000  1
+  K  K1  1  0.73817991  0.26182009  0.25000000  1
+  Na  Na2  1  0.57645731  0.42354269  0.75000000  1
+  Na  Na3  1  0.42354269  0.57645731  0.25000000  1
+  Ti  Ti4  1  0.05329730  0.94670270  0.25000000  1
+  Ti  Ti5  1  0.94670270  0.05329730  0.75000000  1
+  O  O6  1  0.24062797  0.19535752  0.99725221  1
+  O  O7  1  0.19535752  0.24062797  0.49725221  1
+  O  O8  1  0.80464248  0.75937203  0.50274779  1
+  O  O9  1  0.75937203  0.80464248  0.00274779  1
+  O  O10  1  0.78329184  0.21670816  0.75000000  1
+  O  O11  1  0.21670816  0.78329184  0.25000000  1

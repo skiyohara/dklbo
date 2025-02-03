@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Na5TaO5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.94303729
+_cell_length_b   5.94303729
+_cell_length_c   9.93874097
+_cell_angle_alpha   98.65450011
+_cell_angle_beta   98.65450011
+_cell_angle_gamma   116.77491561
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na5TaO5
+_chemical_formula_sum   'Na10 Ta2 O10'
+_cell_volume   300.20530548
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.00468931  0.32170317  0.07752837  1
+  Na  Na1  1  0.67829683  0.99531069  0.42247163  1
+  Na  Na2  1  0.21426885  0.44406894  0.44990317  1
+  Na  Na3  1  0.55593106  0.78573115  0.05009683  1
+  Na  Na4  1  0.78573115  0.55593106  0.55009683  1
+  Na  Na5  1  0.44406894  0.21426885  0.94990317  1
+  Na  Na6  1  0.33182755  0.66817245  0.75000000  1
+  Na  Na7  1  0.66817245  0.33182755  0.25000000  1
+  Na  Na8  1  0.32170317  0.00468931  0.57752837  1
+  Na  Na9  1  0.99531069  0.67829683  0.92247163  1
+  Ta  Ta10  1  0.90807063  0.09192937  0.75000000  1
+  Ta  Ta11  1  0.09192937  0.90807063  0.25000000  1
+  O  O12  1  0.09580485  0.90419515  0.75000000  1
+  O  O13  1  0.90419515  0.09580485  0.25000000  1
+  O  O14  1  0.96359598  0.30548983  0.61712031  1
+  O  O15  1  0.69451017  0.03640402  0.88287969  1
+  O  O16  1  0.19087245  0.40527693  0.89640785  1
+  O  O17  1  0.59472307  0.80912755  0.60359215  1
+  O  O18  1  0.80912755  0.59472307  0.10359215  1
+  O  O19  1  0.40527693  0.19087245  0.39640785  1
+  O  O20  1  0.03640402  0.69451017  0.38287969  1
+  O  O21  1  0.30548983  0.96359598  0.11712031  1

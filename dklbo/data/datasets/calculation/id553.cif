@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_MgZn2(AsO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.27071702
+_cell_length_b   8.34743244
+_cell_length_c   8.83173352
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   119.45414264
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MgZn2(AsO4)2
+_chemical_formula_sum   'Mg2 Zn4 As4 O16'
+_cell_volume   338.34660271
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  1  0.00000000  0.00000000  0.00000000  1
+  Mg  Mg1  1  0.00000000  0.50000000  0.50000000  1
+  Zn  Zn2  1  0.01062090  0.36104662  0.10744026  1
+  Zn  Zn3  1  0.98937910  0.63895338  0.89255974  1
+  Zn  Zn4  1  0.98937910  0.86104662  0.39255974  1
+  Zn  Zn5  1  0.01062090  0.13895338  0.60744026  1
+  As  As6  1  0.35374671  0.69570396  0.30591336  1
+  As  As7  1  0.64625329  0.30429604  0.69408664  1
+  As  As8  1  0.64625329  0.19570396  0.19408664  1
+  As  As9  1  0.35374671  0.80429604  0.80591336  1
+  O  O10  1  0.27952772  0.64113699  0.46569230  1
+  O  O11  1  0.72047228  0.35886301  0.53430770  1
+  O  O12  1  0.72047228  0.14113699  0.03430770  1
+  O  O13  1  0.27952772  0.85886301  0.96569230  1
+  O  O14  1  0.20997100  0.56384918  0.13483388  1
+  O  O15  1  0.79002900  0.43615082  0.86516612  1
+  O  O16  1  0.79002900  0.06384918  0.36516612  1
+  O  O17  1  0.20997100  0.93615082  0.63483388  1
+  O  O18  1  0.16831274  0.87585133  0.24340367  1
+  O  O19  1  0.83168726  0.12414867  0.75659633  1
+  O  O20  1  0.83168726  0.37585133  0.25659633  1
+  O  O21  1  0.16831274  0.62414867  0.74340367  1
+  O  O22  1  0.72002061  0.69992535  0.38202648  1
+  O  O23  1  0.27997939  0.30007465  0.61797352  1
+  O  O24  1  0.27997939  0.19992535  0.11797352  1
+  O  O25  1  0.72002061  0.80007465  0.88202648  1

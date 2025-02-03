@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_InSbO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.53344091
+_cell_length_b   5.27583920
+_cell_length_c   7.47027922
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   100.51241094
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   InSbO4
+_chemical_formula_sum   'In4 Sb4 O16'
+_cell_volume   291.92443511
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  In  In0  1  0.84160618  0.73938622  0.63795146  1
+  In  In1  1  0.15839382  0.26061378  0.36204854  1
+  In  In2  1  0.15839382  0.23938622  0.86204854  1
+  In  In3  1  0.84160618  0.76061378  0.13795146  1
+  Sb  Sb4  1  0.66800916  0.24460219  0.81408330  1
+  Sb  Sb5  1  0.33199084  0.75539781  0.18591670  1
+  Sb  Sb6  1  0.33199084  0.74460219  0.68591670  1
+  Sb  Sb7  1  0.66800916  0.25539781  0.31408330  1
+  O  O8  1  0.81109487  0.54789529  0.89395013  1
+  O  O9  1  0.18890513  0.45210471  0.10604987  1
+  O  O10  1  0.18890513  0.04789529  0.60604987  1
+  O  O11  1  0.81109487  0.95210471  0.39395013  1
+  O  O12  1  0.89832585  0.06044999  0.81881980  1
+  O  O13  1  0.10167415  0.93955001  0.18118020  1
+  O  O14  1  0.10167415  0.56044999  0.68118020  1
+  O  O15  1  0.89832585  0.43955001  0.31881980  1
+  O  O16  1  0.67454973  0.39523372  0.56396653  1
+  O  O17  1  0.32545027  0.60476628  0.43603347  1
+  O  O18  1  0.32545027  0.89523372  0.93603347  1
+  O  O19  1  0.67454973  0.10476628  0.06396653  1
+  O  O20  1  0.43169819  0.41858049  0.80821034  1
+  O  O21  1  0.56830181  0.58141951  0.19178966  1
+  O  O22  1  0.56830181  0.91858049  0.69178966  1
+  O  O23  1  0.43169819  0.08141951  0.30821034  1

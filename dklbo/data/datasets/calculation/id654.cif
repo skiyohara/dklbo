@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_NaYO2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.33119071
+_cell_length_b   7.33119071
+_cell_length_c   5.89408388
+_cell_angle_alpha   104.10170040
+_cell_angle_beta   104.10170040
+_cell_angle_gamma   126.75697303
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaYO2
+_chemical_formula_sum   'Na4 Y4 O8'
+_cell_volume   213.00593515
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.81929664  0.18070336  0.75000000  1
+  Na  Na1  1  0.05606012  0.94393988  0.75000000  1
+  Na  Na2  1  0.18070336  0.81929664  0.25000000  1
+  Na  Na3  1  0.94393988  0.05606012  0.25000000  1
+  Y  Y4  1  0.43288448  0.56711552  0.25000000  1
+  Y  Y5  1  0.56711552  0.43288448  0.75000000  1
+  Y  Y6  1  0.69297166  0.30702834  0.25000000  1
+  Y  Y7  1  0.30702834  0.69297166  0.75000000  1
+  O  O8  1  0.22834875  0.35506117  0.79155346  1
+  O  O9  1  0.64493883  0.77165125  0.70844654  1
+  O  O10  1  0.77165125  0.64493883  0.20844654  1
+  O  O11  1  0.35506117  0.22834875  0.29155346  1
+  O  O12  1  0.45863122  0.08240655  0.79025258  1
+  O  O13  1  0.08240655  0.45863122  0.29025258  1
+  O  O14  1  0.54136878  0.91759345  0.20974742  1
+  O  O15  1  0.91759345  0.54136878  0.70974742  1

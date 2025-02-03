@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Na3TlO2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   11.37955420
+_cell_length_b   6.65418430
+_cell_length_c   5.30128447
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na3TlO2
+_chemical_formula_sum   'Na12 Tl4 O8'
+_cell_volume   401.42201209
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.66622085  0.00162666  0.74618913  1
+  Na  Na1  1  0.83377915  0.50162666  0.24618913  1
+  Na  Na2  1  0.16622085  0.00162666  0.75381087  1
+  Na  Na3  1  0.33377915  0.99837334  0.25381087  1
+  Na  Na4  1  0.92323312  0.25000000  0.74803524  1
+  Na  Na5  1  0.57676688  0.75000000  0.24803524  1
+  Na  Na6  1  0.07676688  0.75000000  0.25196476  1
+  Na  Na7  1  0.42323312  0.25000000  0.75196476  1
+  Na  Na8  1  0.33377915  0.50162666  0.25381087  1
+  Na  Na9  1  0.16622085  0.49837334  0.75381087  1
+  Na  Na10  1  0.66622085  0.49837334  0.74618913  1
+  Na  Na11  1  0.83377915  0.99837334  0.24618913  1
+  Tl  Tl12  1  0.40908421  0.75000000  0.74087471  1
+  Tl  Tl13  1  0.09091579  0.25000000  0.24087471  1
+  Tl  Tl14  1  0.59091579  0.25000000  0.25912529  1
+  Tl  Tl15  1  0.90908421  0.75000000  0.75912529  1
+  O  O16  1  0.24156294  0.75000000  0.49203771  1
+  O  O17  1  0.25843706  0.25000000  0.99203771  1
+  O  O18  1  0.75843706  0.25000000  0.50796229  1
+  O  O19  1  0.74156294  0.75000000  0.00796229  1
+  O  O20  1  0.50000000  0.50000000  0.50000000  1
+  O  O21  1  0.00000000  0.50000000  0.00000000  1
+  O  O22  1  0.50000000  0.00000000  0.50000000  1
+  O  O23  1  0.00000000  0.00000000  0.00000000  1

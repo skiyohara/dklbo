@@ -1,0 +1,41 @@
+# generated using pymatgen
+data_Li8PtO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.88339807
+_cell_length_b   5.88339807
+_cell_length_c   5.88339807
+_cell_angle_alpha   54.77969507
+_cell_angle_beta   54.77969507
+_cell_angle_gamma   54.77969507
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li8PtO6
+_chemical_formula_sum   'Li8 Pt1 O6'
+_cell_volume   126.49614742
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.65701522  0.65701522  0.65701522  1
+  Li  Li1  1  0.09811638  0.76615165  0.48681286  1
+  Li  Li2  1  0.48681286  0.09811638  0.76615165  1
+  Li  Li3  1  0.76615165  0.48681286  0.09811638  1
+  Li  Li4  1  0.90188362  0.23384835  0.51318714  1
+  Li  Li5  1  0.51318714  0.90188362  0.23384835  1
+  Li  Li6  1  0.34298478  0.34298478  0.34298478  1
+  Li  Li7  1  0.23384835  0.51318714  0.90188362  1
+  Pt  Pt8  1  0.00000000  0.00000000  0.00000000  1
+  O  O9  1  0.09321131  0.38287023  0.76368158  1
+  O  O10  1  0.61712977  0.23631842  0.90678869  1
+  O  O11  1  0.90678869  0.61712977  0.23631842  1
+  O  O12  1  0.76368158  0.09321131  0.38287023  1
+  O  O13  1  0.38287023  0.76368158  0.09321131  1
+  O  O14  1  0.23631842  0.90678869  0.61712977  1

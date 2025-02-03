@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Na2Sb4O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.95337891
+_cell_length_b   9.95337891
+_cell_length_c   5.66625062
+_cell_angle_alpha   104.34194890
+_cell_angle_beta   104.34194890
+_cell_angle_gamma   112.08923353
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na2Sb4O7
+_chemical_formula_sum   'Na4 Sb8 O14'
+_cell_volume   466.20069869
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.32782823  0.51370004  0.42923205  1
+  Na  Na1  1  0.48629996  0.67217177  0.07076795  1
+  Na  Na2  1  0.67217177  0.48629996  0.57076795  1
+  Na  Na3  1  0.51370004  0.32782823  0.92923205  1
+  Sb  Sb4  1  0.89013324  0.39513866  0.18051691  1
+  Sb  Sb5  1  0.39513866  0.89013324  0.68051691  1
+  Sb  Sb6  1  0.10986676  0.60486134  0.81948309  1
+  Sb  Sb7  1  0.60486134  0.10986676  0.31948309  1
+  Sb  Sb8  1  0.14257496  0.28078984  0.78252126  1
+  Sb  Sb9  1  0.71921016  0.85742504  0.71747874  1
+  Sb  Sb10  1  0.85742504  0.71921016  0.21747874  1
+  Sb  Sb11  1  0.28078984  0.14257496  0.28252126  1
+  O  O12  1  0.77465981  0.49852472  0.98458362  1
+  O  O13  1  0.38807660  0.01917809  0.04779370  1
+  O  O14  1  0.22534019  0.50147528  0.01541638  1
+  O  O15  1  0.49852472  0.77465981  0.48458362  1
+  O  O16  1  0.30617731  0.69382269  0.75000000  1
+  O  O17  1  0.69382269  0.30617731  0.25000000  1
+  O  O18  1  0.01917809  0.38807660  0.54779370  1
+  O  O19  1  0.61192340  0.98082191  0.95220630  1
+  O  O20  1  0.98082191  0.61192340  0.45220630  1
+  O  O21  1  0.67941730  0.70548326  0.89336031  1
+  O  O22  1  0.70548326  0.67941730  0.39336031  1
+  O  O23  1  0.32058270  0.29451674  0.10663969  1
+  O  O24  1  0.50147528  0.22534019  0.51541638  1
+  O  O25  1  0.29451674  0.32058270  0.60663969  1

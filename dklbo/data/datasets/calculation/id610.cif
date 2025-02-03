@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_NaBi(MoO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.79247824
+_cell_length_b   6.79247824
+_cell_length_c   6.79247824
+_cell_angle_alpha   134.56013248
+_cell_angle_beta   134.56013248
+_cell_angle_gamma   66.21442794
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaBi(MoO4)2
+_chemical_formula_sum   'Na1 Bi1 Mo2 O8'
+_cell_volume   156.63634521
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.75000000  0.25000000  0.50000000  1
+  Bi  Bi1  1  0.50000000  0.50000000  0.00000000  1
+  Mo  Mo2  1  0.00000000  0.00000000  0.00000000  1
+  Mo  Mo3  1  0.25000000  0.75000000  0.50000000  1
+  O  O4  1  0.49008904  0.07881114  0.89254286  1
+  O  O5  1  0.18626827  0.59754618  0.10745714  1
+  O  O6  1  0.92118886  0.81373173  0.41127790  1
+  O  O7  1  0.40245382  0.50991096  0.58872210  1
+  O  O8  1  0.32793672  0.92669569  0.08567639  1
+  O  O9  1  0.84101930  0.24226033  0.91432361  1
+  O  O10  1  0.07330431  0.15898070  0.40124103  1
+  O  O11  1  0.75773967  0.67206328  0.59875897  1

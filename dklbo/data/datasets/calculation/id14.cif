@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Au2O3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.69889747
+_cell_length_b   5.58779335
+_cell_length_c   8.27355946
+_cell_angle_alpha   53.65282114
+_cell_angle_beta   42.20979001
+_cell_angle_gamma   84.13738885
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Au2O3
+_chemical_formula_sum   'Au4 O6'
+_cell_volume   131.15906530
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Au  Au0  1  0.84261296  0.66740579  0.06573362  1
+  Au  Au1  1  0.66740579  0.84261296  0.42424763  1
+  Au  Au2  1  0.82575237  0.18426638  0.58259421  1
+  Au  Au3  1  0.18426638  0.82575237  0.40738704  1
+  O  O4  1  0.43761292  0.43761292  0.56238708  1
+  O  O5  1  0.68761292  0.68761292  0.81238708  1
+  O  O6  1  0.93729335  0.30797498  0.22707347  1
+  O  O7  1  0.30797498  0.93729335  0.52765820  1
+  O  O8  1  0.02292653  0.72234180  0.31270665  1
+  O  O9  1  0.72234180  0.02292653  0.94202502  1

@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Rb2MgO2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.85005840
+_cell_length_b   6.85005840
+_cell_length_c   6.85005840
+_cell_angle_alpha   125.66132822
+_cell_angle_beta   74.92757167
+_cell_angle_gamma   132.61330730
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Rb2MgO2
+_chemical_formula_sum   'Rb4 Mg2 O4'
+_cell_volume   187.25411762
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.65478927  0.86253616  0.51732543  1
+  Rb  Rb1  1  0.15478927  0.63746384  0.79225312  1
+  Rb  Rb2  1  0.34521073  0.13746384  0.48267457  1
+  Rb  Rb3  1  0.84521073  0.36253616  0.20774688  1
+  Mg  Mg4  1  0.75000000  0.75000000  0.00000000  1
+  Mg  Mg5  1  0.25000000  0.25000000  0.00000000  1
+  O  O6  1  0.09136358  0.17196468  0.26332826  1
+  O  O7  1  0.59136358  0.32803532  0.91939890  1
+  O  O8  1  0.90863642  0.82803532  0.73667174  1
+  O  O9  1  0.40863642  0.67196468  0.08060110  1

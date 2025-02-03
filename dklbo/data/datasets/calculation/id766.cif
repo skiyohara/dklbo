@@ -1,0 +1,41 @@
+# generated using pymatgen
+data_Si2Hg6O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.03409621
+_cell_length_b   7.03409621
+_cell_length_c   6.02780130
+_cell_angle_alpha   107.71020010
+_cell_angle_beta   107.71020010
+_cell_angle_gamma   65.36900638
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Si2Hg6O7
+_chemical_formula_sum   'Si2 Hg6 O7'
+_cell_volume   252.78187397
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Si  Si0  1  0.35284205  0.35284205  0.89896598  1
+  Si  Si1  1  0.64715795  0.64715795  0.10103402  1
+  Hg  Hg2  1  0.87829419  0.35349766  0.58347380  1
+  Hg  Hg3  1  0.64650234  0.12170581  0.41652620  1
+  Hg  Hg4  1  0.12170581  0.64650234  0.41652620  1
+  Hg  Hg5  1  0.35349766  0.87829419  0.58347380  1
+  Hg  Hg6  1  0.88531680  0.88531680  0.95242959  1
+  Hg  Hg7  1  0.11468320  0.11468320  0.04757041  1
+  O  O8  1  0.50000000  0.50000000  0.00000000  1
+  O  O9  1  0.12771063  0.48599668  0.73840901  1
+  O  O10  1  0.51400332  0.87228937  0.26159099  1
+  O  O11  1  0.87228937  0.51400332  0.26159099  1
+  O  O12  1  0.48599668  0.12771063  0.73840901  1
+  O  O13  1  0.69308345  0.69308345  0.87188427  1
+  O  O14  1  0.30691655  0.30691655  0.12811573  1

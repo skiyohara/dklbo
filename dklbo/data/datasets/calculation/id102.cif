@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Ba4PtO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.25268972
+_cell_length_b   7.25268972
+_cell_length_c   7.25268972
+_cell_angle_alpha   89.46701339
+_cell_angle_beta   89.46701339
+_cell_angle_gamma   89.46701339
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba4PtO6
+_chemical_formula_sum   'Ba8 Pt2 O12'
+_cell_volume   381.45320352
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.25000000  0.25000000  0.25000000  1
+  Ba  Ba1  1  0.75000000  0.75000000  0.75000000  1
+  Ba  Ba2  1  0.11762297  0.38237703  0.75000000  1
+  Ba  Ba3  1  0.75000000  0.11762297  0.38237703  1
+  Ba  Ba4  1  0.38237703  0.75000000  0.11762297  1
+  Ba  Ba5  1  0.88237703  0.61762297  0.25000000  1
+  Ba  Ba6  1  0.25000000  0.88237703  0.61762297  1
+  Ba  Ba7  1  0.61762297  0.25000000  0.88237703  1
+  Pt  Pt8  1  0.00000000  0.00000000  0.00000000  1
+  Pt  Pt9  1  0.50000000  0.50000000  0.50000000  1
+  O  O10  1  0.77099099  0.43778873  0.57385413  1
+  O  O11  1  0.57385413  0.77099099  0.43778873  1
+  O  O12  1  0.43778873  0.57385413  0.77099099  1
+  O  O13  1  0.06221127  0.72900901  0.92614587  1
+  O  O14  1  0.92614587  0.06221127  0.72900901  1
+  O  O15  1  0.72900901  0.92614587  0.06221127  1
+  O  O16  1  0.22900901  0.56221127  0.42614587  1
+  O  O17  1  0.42614587  0.22900901  0.56221127  1
+  O  O18  1  0.56221127  0.42614587  0.22900901  1
+  O  O19  1  0.93778873  0.27099099  0.07385413  1
+  O  O20  1  0.27099099  0.07385413  0.93778873  1
+  O  O21  1  0.07385413  0.93778873  0.27099099  1

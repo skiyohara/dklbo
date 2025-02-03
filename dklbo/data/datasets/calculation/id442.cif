@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_LaAg(MoO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.85952216
+_cell_length_b   6.85952216
+_cell_length_c   6.85952216
+_cell_angle_alpha   134.16177118
+_cell_angle_beta   134.16177118
+_cell_angle_gamma   66.83544531
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LaAg(MoO4)2
+_chemical_formula_sum   'La1 Ag1 Mo2 O8'
+_cell_volume   163.42628165
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.50000000  0.50000000  0.00000000  1
+  Ag  Ag1  1  0.75000000  0.25000000  0.50000000  1
+  Mo  Mo2  1  0.25000000  0.75000000  0.50000000  1
+  Mo  Mo3  1  0.00000000  0.00000000  0.00000000  1
+  O  O4  1  0.39749778  0.51373169  0.58786890  1
+  O  O5  1  0.92586280  0.80962888  0.41213110  1
+  O  O6  1  0.06794027  0.15533129  0.39249368  1
+  O  O7  1  0.76283761  0.67544658  0.60750632  1
+  O  O8  1  0.84466871  0.23716239  0.91260898  1
+  O  O9  1  0.32455342  0.93205973  0.08739102  1
+  O  O10  1  0.19037112  0.60250222  0.11623392  1
+  O  O11  1  0.48626831  0.07413720  0.88376608  1

@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Ga2PbO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.53767083
+_cell_length_b   5.35968295
+_cell_length_c   5.35968295
+_cell_angle_alpha   121.38240815
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ga2PbO4
+_chemical_formula_sum   'Ga4 Pb2 O8'
+_cell_volume   209.37669685
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ga  Ga0  1  0.55206227  0.36344654  0.71024395  1
+  Ga  Ga1  1  0.44793773  0.71024395  0.36344654  1
+  Ga  Ga2  1  0.94793773  0.36344654  0.71024395  1
+  Ga  Ga3  1  0.05206227  0.71024395  0.36344654  1
+  Pb  Pb4  1  0.75000000  0.97185422  0.02069676  1
+  Pb  Pb5  1  0.25000000  0.02069676  0.97185422  1
+  O  O6  1  0.75000000  0.48669560  0.87476613  1
+  O  O7  1  0.25000000  0.87476613  0.48669560  1
+  O  O8  1  0.50000000  0.68220789  0.68220789  1
+  O  O9  1  0.00000000  0.68220789  0.68220789  1
+  O  O10  1  0.56101078  0.00719538  0.36820038  1
+  O  O11  1  0.43898922  0.36820038  0.00719538  1
+  O  O12  1  0.06101078  0.36820038  0.00719538  1
+  O  O13  1  0.93898922  0.00719538  0.36820038  1
