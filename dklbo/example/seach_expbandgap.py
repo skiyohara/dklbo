@@ -123,7 +123,7 @@ target_indx = torch.tensor(target_indx, dtype=torch.long)
 convergence = True
 cycle = 0
 while convergence:
-    # make obserbed(train) and candidate(test) batch
+    # make obserbed(train) and candidate(example) batch
     obs_batch = Batch.from_data_list(graphs.index_select(obs_indx),follow_batch=follow_batch)
     cand_batch = Batch.from_data_list(graphs.index_select(cand_indx),follow_batch=follow_batch)
 

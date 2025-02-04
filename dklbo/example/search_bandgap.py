@@ -64,7 +64,7 @@ cand_indx = torch.tensor(np.append(indx[n_ini:],target_indx),dtype=torch.long)
 convergence = True
 cycle = 0
 while convergence:
-    # make obserbed(train) and candidate(test) batch
+    # make obserbed(train) and candidate(example) batch
     obs_batch = Batch.from_data_list(graphs.index_select(obs_indx))
     cand_batch = Batch.from_data_list(graphs.index_select(cand_indx))
 
@@ -104,3 +104,4 @@ while convergence:
         # update obserbed indices
         obs_indx = torch.cat([obs_indx, next_cand_indx.unsqueeze(0)])
         cand_indx = cand_indx[cand_indx != next_cand_indx]
+print('converged cycle',cycle)
