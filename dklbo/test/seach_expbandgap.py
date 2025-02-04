@@ -169,3 +169,5 @@ while convergence:
         # update obserbed indices
         obs_indx = torch.cat([obs_indx, next_cand_indx.unsqueeze(0)])
         cand_indx = cand_indx[cand_indx != next_cand_indx]
+
+print('converged cycle',cycle)
