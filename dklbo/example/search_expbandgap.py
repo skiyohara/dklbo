@@ -23,7 +23,7 @@ gpu = True
 
 
 """ data load"""
-path_to_data = Path('../data/datasets/experiment/exp_bandgap.xlsx')
+path_to_data = Path('./datasets/experiment/exp_bandgap.xlsx')
 df = pd.read_excel(path_to_data, index_col=0, header=0)
 columns = df.columns.tolist()[0:-1]
 x_table = df.iloc[:, 0:-1].values
@@ -166,9 +166,9 @@ while convergence:
     next_cand_indx = cand_indx[torch.argmax(ucb)]
 
     print('----------cycle %s-----------' %(cycle))
-    print((next_cand_indx,next_cand_indx.shape),(target_indx,target_indx.shape))
+    print('next candidate',next_cand_indx)
     cycle += 1
-    print(len(obs_indx),len(cand_indx))
+    print('current',len(obs_indx),'remaining',len(cand_indx))
     if next_cand_indx == target_indx:
         convergence = False
     else:
