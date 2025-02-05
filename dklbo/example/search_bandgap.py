@@ -9,6 +9,9 @@ from dklbo.data.util import CIFData
 from dklbo.model.dkl import DKLCGCNN
 from dklbo.data.util import standalize
 
+import sys
+sys.path.append('../../dklbo')
+
 import warnings
 warnings.filterwarnings("ignore")
 

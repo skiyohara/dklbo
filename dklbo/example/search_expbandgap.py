@@ -10,10 +10,12 @@ from gpytorch.mlls import ExactMarginalLogLikelihood
 from dklbo.model.dkl import DKLCompGraph
 from dklbo.data.util import standalize, ElementDescTable, normalize
 
-
+import sys
+sys.path.append('../../dklbo')
 
 import warnings
 warnings.filterwarnings("ignore")
+
 """ parameters """
 n_ini = 10 # number of initial samples
 n_gp = 10 # number of
