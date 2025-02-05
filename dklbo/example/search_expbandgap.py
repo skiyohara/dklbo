@@ -117,7 +117,7 @@ epochs = 50
 """ initial datasets"""
 np.random.seed(0)
 indx = np.arange(graphs.num_graphs)
-target_indx = np.argmax(graphs.y.numpy())
+target_indx = np.argmax(graphs.y.cpu().numpy())
 indx = indx[indx!=target_indx]
 np.random.shuffle(indx)
 obs_indx = torch.tensor(indx[0:n_ini].tolist(),dtype=torch.long)
