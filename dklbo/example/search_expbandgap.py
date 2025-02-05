@@ -6,12 +6,11 @@ from pathlib import Path
 from pymatgen.core.structure import Element
 from torch_geometric.data import Batch, Data
 from gpytorch.likelihoods import GaussianLikelihood
+import sys
+sys.path.append('../dklbo')
 from gpytorch.mlls import ExactMarginalLogLikelihood
 from dklbo.model.dkl import DKLCompGraph
 from dklbo.data.util import standalize, ElementDescTable, normalize
-
-import sys
-sys.path.append('../dklbo')
 
 import warnings
 warnings.filterwarnings("ignore")

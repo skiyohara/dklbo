@@ -5,12 +5,12 @@ from pathlib import Path
 from torch_geometric.data import Batch, Data
 from gpytorch.likelihoods import GaussianLikelihood
 from gpytorch.mlls import ExactMarginalLogLikelihood
+import sys
+sys.path.append('../dklbo')
 from dklbo.data.util import CIFData
 from dklbo.model.dkl import DKLCGCNN
 from dklbo.data.util import standalize
 
-import sys
-sys.path.append('../dklbo')
 
 import warnings
 warnings.filterwarnings("ignore")
