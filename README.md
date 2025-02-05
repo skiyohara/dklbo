@@ -14,6 +14,7 @@ This enables handling multiple sites individually within a **single Data object*
 
 ## Sample Code
 ### 1. **`/example/search_bandgap.py`**
+- Unzip /example/datasets/calculation/cifs.zip
 - Searches for the material with the **largest band gap** among **922 oxides**.  
 - Uses **CGCNN** for the neural network.  
   - 📄 [Reference: CGCNN](https://doi.org/10.1103/PhysRevLett.120.145301)
