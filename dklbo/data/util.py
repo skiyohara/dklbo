@@ -211,7 +211,7 @@ class ElementDescTable(object):
         When tabl2 is None, duplicates is checked in table1.
 
         :param table1: train
-        :param table2: test or None
+        :param table2: example or None
         :return:
         """
         if isinstance(table1, list):
@@ -219,7 +219,7 @@ class ElementDescTable(object):
         if isinstance(table2, list):
             table2 = np.asarray(table2)
 
-        dupl_indx = []  # duplicate indices in table2 (test data)
+        dupl_indx = []  # duplicate indices in table2 (example data)
         if table2 is None:
             if indx is None:
                 ValueError('indx is None')

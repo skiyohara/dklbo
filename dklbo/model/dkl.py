@@ -1,5 +1,4 @@
 from dklbo.model.modules import ExactGP_graph
-import torch
 from dklbo.model.crystal import CrystalGraphConvNet
 from dklbo.model.compsition import CompGraphConvNet
 from gpytorch.kernels.matern_kernel import MaternKernel

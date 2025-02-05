@@ -16,6 +16,7 @@ warnings.filterwarnings("ignore")
 n_ini = 10 # number of initial samples
 n_gp = 15 # number of
 beta = 0.2 # beta for UCB
+gpu = True
 
 
 """ data load"""
@@ -39,6 +40,9 @@ for x, y, id in dataset:
     y = torch.tensor(y, dtype=torch.float32)
     graphs.append(Data(x=x, edge_index=edge_index, edge_attr=edge_attr,y = y))
 graphs = Batch.from_data_list(graphs)
+
+if gpu:
+    graphs = graphs.to('cuda:0')
 
 """ neural network setting"""
 nn_param = {}
@@ -76,6 +80,8 @@ while convergence:
     likelihood = GaussianLikelihood()
     model = DKLCGCNN(None, obs_batch.y, likelihood, nn_param,
                      obs_batch, noise_fix=True)
+    if gpu:
+        model = model.to('cuda:0')
 
     # training
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
@@ -88,7 +94,7 @@ while convergence:
     # select a next candidate
     model.eval()
     model.likelihood.eval()
-    pred = model.likelihood(model(cand_batch, follow_batch=follow_batch))
+    pred = model.likelihood(model(cand_batch))
     mean = pred.mean
     std = pred.stddev
     ucb = mean + beta * std

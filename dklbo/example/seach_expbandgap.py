@@ -18,6 +18,7 @@ warnings.filterwarnings("ignore")
 n_ini = 10 # number of initial samples
 n_gp = 10 # number of
 beta = 0.2 # beta for UCB
+gpu = True
 
 
 """ data load"""
@@ -82,6 +83,8 @@ print(edt.prop_dict)
 graphs = edt.collate_graphs_from_tablevalues(x_table, y_table,
                                              follow_batch=follow_batch)
 
+if gpu:
+    graphs = graphs.to('cuda:0')
 print(graphs)
 
 """ neural network setting"""
@@ -141,6 +144,8 @@ while convergence:
                          follow_batch=follow_batch,
                          noise_fix=False, # adjust noise
                          )
+    if gpu:
+        model = model.to('cuda:0')
 
     # training
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)

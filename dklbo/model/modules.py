@@ -1,20 +1,8 @@
-import numpy as np
-import sys
-import itertools
 import torch
-import torch.nn as nn
-from torch.utils.data import TensorDataset, DataLoader
 import gpytorch
-from gpytorch.kernels.matern_kernel import MaternKernel
-from gpytorch.kernels.scale_kernel import ScaleKernel
-from gpytorch.priors.torch_priors import GammaPrior
 from gpytorch.models.gp import GP
-import warnings
 from copy import deepcopy
-from torch_scatter import scatter
-from torch_geometric.data import Data
 from gpytorch.models.exact_prediction_strategies import prediction_strategy
-from torch_geometric.loader import DataLoader as DataLoader_geo
 from torch_geometric.data import Batch, collate
 from gpytorch.likelihoods import _GaussianLikelihoodBase
 from gpytorch.distributions import MultitaskMultivariateNormal, MultivariateNormal
@@ -95,7 +83,7 @@ class ExactGP_graph(GP):
         return super(ExactGP_graph, self)._apply(fn)
 
     def _clear_cache(self):
-        # The precomputed caches from test time live in prediction_strategy
+        # The precomputed caches from example time live in prediction_strategy
         self.prediction_strategy = None
 
     def local_load_samples(self, samples_dict, memo, prefix):
@@ -149,7 +137,7 @@ class ExactGP_graph(GP):
         Returns a new GP model that incorporates the specified inputs and targets as new training data.
 
         Using this method is more efficient than updating with `set_train_data` when the number of inputs is relatively
-        small, because any computed test-time caches will be updated in linear time rather than computed from scratch.
+        small, because any computed example-time caches will be updated in linear time rather than computed from scratch.
 
         .. note::
             If `targets` is a batch (e.g. `b x m`), then the GP returned from this method will be a batch mode GP.
@@ -160,13 +148,13 @@ class ExactGP_graph(GP):
             observations.
         :param torch.Tensor targets: (`b1 x ... x bk x m` or `f x b1 x ... x bk x m`) Labels of fantasy observations.
         :return: An `ExactGP` model with `n + m` training examples, where the `m` fantasy examples have been added
-            and all test-time caches have been updated.
+            and all example-time caches have been updated.
         :rtype: ~gpytorch.models.ExactGP
         """
         if self.prediction_strategy is None:
             raise RuntimeError(
                 "Fantasy observations can only be added after making predictions with a model so that "
-                "all test independent caches exist. Call the model on some data first!"
+                "all example independent caches exist. Call the model on some data first!"
             )
 
         model_batch_shape = self.train_inputs[0].shape[:-2]
@@ -301,7 +289,7 @@ class ExactGP_graph(GP):
             else:
                 full_inputs = Batch.from_data_list(train_inputs.to_data_list() + inputs.to_data_list(),
                                                    follow_batch=kwargs['follow_batch'])
-            # Get the joint distribution for training/test data
+            # Get the joint distribution for training/example data
             full_output = super(ExactGP_graph, self).__call__(full_inputs, **kwargs)
             if settings.debug().on():
                 if not isinstance(full_output, MultivariateNormal):
