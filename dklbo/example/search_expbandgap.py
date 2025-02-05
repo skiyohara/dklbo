@@ -124,6 +124,8 @@ obs_indx = torch.tensor(indx[0:n_ini].tolist(),dtype=torch.long)
 cand_indx = torch.tensor(np.append(indx[n_ini:],target_indx),dtype=torch.long)
 target_indx = torch.tensor(target_indx, dtype=torch.long)
 
+print('target',target_indx)
+
 convergence = True
 cycle = 0
 while convergence:
