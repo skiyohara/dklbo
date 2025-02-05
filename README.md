@@ -7,7 +7,7 @@ This software is not directly applicable to individual cases because the neural 
 Therefore, this package serves as an **example to demonstrate how to use DKL**.
 
 ## Instructions
-This package assumes the use of **graph-based neural networks** and modifies 's `ExactGP` class in `gpytorch` to create a custom class **`ExactGP_graph`**, which allows **` `Data`** class in pytorch_geometric to be used as input.  
+This package assumes the use of **graph-based neural networks** and modifies 's `ExactGP` class in `gpytorch` to create a custom class **`ExactGP_graph`**, which allows **``Data`** class in pytorch_geometric to be used as input.  
 
 Additionally, to facilitate handling **high-entropy alloys with multiple sites**, a custom data structure called **`SiteGraph`**, which inherits from `pytorch_geometric`'s `Data`, is used.  
 This enables handling multiple sites individually within a **single Data object**.
