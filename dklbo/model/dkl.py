@@ -1,3 +1,5 @@
+import torch
+from abc import ABC, abstractmethod
 from dklbo.model.modules import ExactGP_graph
 from dklbo.model.crystal import CrystalGraphConvNet
 from dklbo.model.compsition import CompGraphConvNet
@@ -5,6 +7,7 @@ from gpytorch.kernels.matern_kernel import MaternKernel
 from gpytorch.priors.torch_priors import GammaPrior
 import gpytorch
 from torch_geometric.data import Batch, Data
+
 
 
 
@@ -89,7 +92,6 @@ class DKLCompGraph(ExactGP_graph):
             optimizer.step()
             scheduler.step()
 
-
 class DKLCGCNN(ExactGP_graph):
     def __init__(self, train_x, train_y, likelihood, nn_param,
                  batch:Data, noise_fix=False):
@@ -167,5 +169,57 @@ class DKLCGCNN(ExactGP_graph):
             optimizer.step()
             scheduler.step()
 
-#class DKL(ExactGP_graph,ABC)
+class DKL(ExactGP_graph):
+    def __init__(self, train_x,
+                 train_y,
+                 likelihood,
+                 batch:Data,
+                 transformer:torch.nn.Module,
+                 mean_module:torch.nn.Module,
+                 covar_module:torch.nn.Module,
+                 noise_fix=False):
+        """
+        :param train_x: dammy arg, should be None
+        :param train_y: (N,) - Tensor
+        :param batch: Data(graph) (a replacement for train_x)
+        """
+
+        super(DKL, self).__init__(None, train_y.flatten(), likelihood,
+                                  )
+
+        self.transformer = transformer
+        self.mean_module = mean_module
+        self.covar_module = covar_module
+
+        self.train_inputs = batch
+        self.train_targets = train_y
+
+        # scaler
+        # This module will scale the NN features so that they're nice values
+        self.scale_to_bounds = gpytorch.utils.grid.ScaleToBounds(-1., 1.)
+
+        if noise_fix:
+            self.likelihood.noise = 1e-4  # originally return self.noise_covar.noise
+            self.likelihood.noise_covar.raw_noise.requires_grad = False
+
+    def forward(self, batch:Data,**kwargs):
+        x = self.transformer(batch)
+        x = self.scale_to_bounds(x)
+        mean_x = self.mean_module(x)
+        covar_x = self.covar_module(x)
+
+        return gpytorch.distributions.MultivariateNormal(mean_x, covar_x)
+
+    def trainmodel(self,optimizer, scheduler, mll, epochs):
+        for i in range(epochs):
+            # Zero gradients from previous iteration
+            optimizer.zero_grad()
+            pred = self.likelihood(self.__call__(self.train_inputs))
+
+            # Calc loss and backprop gradients
+            loss = -mll(pred, self.train_targets)
+            loss.backward()
+
+            optimizer.step()
+            scheduler.step()
 

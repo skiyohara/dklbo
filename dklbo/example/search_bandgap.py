@@ -3,12 +3,18 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 from torch_geometric.data import Batch, Data
+import gpytorch
 from gpytorch.likelihoods import GaussianLikelihood
 from gpytorch.mlls import ExactMarginalLogLikelihood
+from gpytorch.means import ConstantMean
+from gpytorch.kernels import ScaleKernel
+from gpytorch.kernels.matern_kernel import MaternKernel
+from gpytorch.priors.torch_priors import GammaPrior
 import sys
 sys.path.append('../..')
 from dklbo.data.util import CIFData
-from dklbo.model.dkl import DKLCGCNN
+from dklbo.model.dkl import DKL
+from dklbo.model.crystal import CrystalGraphConvNet
 from dklbo.data.util import standalize
 
 
@@ -19,7 +25,7 @@ warnings.filterwarnings("ignore")
 n_ini = 10 # number of initial samples
 n_gp = 15 # number of
 beta = 0.2 # beta for UCB
-gpu = True
+gpu = False
 
 
 """ data load"""
@@ -81,9 +87,34 @@ while convergence:
     obs_batch.y = y_standalized.view(-1)
 
     # construct model
+    transformer = CrystalGraphConvNet(
+        orig_atom_fea_len=nn_param['orig_atom_fea_len'],
+        nbr_fea_len=nn_param['nbr_fea_len'],
+        atom_fea_len=nn_param['atom_fea_len'],
+        n_conv = nn_param['n_conv'],
+        h_fea_len=nn_param['h_fea_len'],
+        n_h=nn_param['n_h']
+    )
+    mean_module = ConstantMean()
+    covar_module = ScaleKernel(
+        base_kernel=MaternKernel(
+            nu=2.5,
+            ard_num_dims=nn_param['h_fea_len'],
+            lengthscale_prior=GammaPrior(3.0, 6.0),
+        ),
+        outputscale_prior=GammaPrior(2.0, 0.15),
+    )
+
     likelihood = GaussianLikelihood()
-    model = DKLCGCNN(None, obs_batch.y, likelihood, nn_param,
-                     obs_batch, noise_fix=True)
+    model = DKL(None,
+                obs_batch.y,
+                likelihood,
+                batch = obs_batch,
+                transformer=transformer,
+                mean_module=mean_module,
+                covar_module=covar_module,
+                noise_fix=True
+                )
     if gpu:
         model = model.to('cuda:0')
 
