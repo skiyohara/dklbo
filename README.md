@@ -26,11 +26,15 @@ Alternatively, they can be defined within `__init__` to create a new class, as s
 - Searches for the material with the **largest band gap** among **922 oxides**.  
 - Uses **CGCNN** for the neural network.  
   - 📄 [Reference: CGCNN](https://doi.org/10.1103/PhysRevLett.120.145301)
+ ```bash
+python search_bandgap.py
 
 ### 2. **`/example/search_expbandgap.py`**
 - Searches for the material with the **largest band gap** among **610 organic-inorganic hybrid perovskites (ABX₃)**.  
 - Uses a **graph-based neural network**, where convolution is applied to each **A-site, B-site, and X-site** separately.  
 - The **`SiteGraph`** structure is utilized to manage site-specific information in ABX₃.
+```bash
+python search_expbandgap.py
 
 ## Installation
 ```bash
