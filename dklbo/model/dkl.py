@@ -82,8 +82,7 @@ class DKLCompGraph(ExactGP_graph):
         for i in range(epochs):
             # Zero gradients from previous iteration
             optimizer.zero_grad()
-            pred = self.likelihood(
-                self.__call__(self.train_inputs))
+            pred = self.__call__(self.train_inputs)
 
             # Calc loss and backprop gradients
             loss = -mll(pred, self.train_targets)
@@ -160,7 +159,7 @@ class DKLCGCNN(ExactGP_graph):
         for i in range(epochs):
             # Zero gradients from previous iteration
             optimizer.zero_grad()
-            pred = self.likelihood(self.__call__(self.train_inputs))
+            pred = self.__call__(self.train_inputs)
 
             # Calc loss and backprop gradients
             loss = -mll(pred, self.train_targets)
@@ -170,14 +169,15 @@ class DKLCGCNN(ExactGP_graph):
             scheduler.step()
 
 class DKL(ExactGP_graph):
-    def __init__(self, train_x,
+    def __init__(self,
+                 train_x,
                  train_y,
                  likelihood,
                  batch:Data,
                  transformer:torch.nn.Module,
                  mean_module:torch.nn.Module,
                  covar_module:torch.nn.Module,
-                 noise_fix=False):
+                 ):
         """
         :param train_x: dammy arg, should be None
         :param train_y: (N,) - Tensor
@@ -198,9 +198,9 @@ class DKL(ExactGP_graph):
         # This module will scale the NN features so that they're nice values
         self.scale_to_bounds = gpytorch.utils.grid.ScaleToBounds(-1., 1.)
 
-        if noise_fix:
-            self.likelihood.noise = 1e-4  # originally return self.noise_covar.noise
-            self.likelihood.noise_covar.raw_noise.requires_grad = False
+        #if noise_fix:
+        #    self.likelihood.noise = 1e-4  # originally return self.noise_covar.noise
+        #    self.likelihood.noise_covar.raw_noise.requires_grad = False
 
     def forward(self, batch:Data,**kwargs):
         x = self.transformer(batch)
@@ -214,7 +214,7 @@ class DKL(ExactGP_graph):
         for i in range(epochs):
             # Zero gradients from previous iteration
             optimizer.zero_grad()
-            pred = self.likelihood(self.__call__(self.train_inputs))
+            pred = self.__call__(self.train_inputs)
 
             # Calc loss and backprop gradients
             loss = -mll(pred, self.train_targets)
